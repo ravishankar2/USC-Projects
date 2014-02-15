@@ -99,7 +99,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
         <td>mbarton@4wireapps.net</td>
         <td>4WireApps</td>
         <td>http://4wireapps.net</td>
-        <td>(639)839-4568</td>
+        <td>(639) 839-4568</td>
     </tr>
     <tr>
         <td>YF46K</td>
@@ -107,7 +107,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
         <td>tucker.d@appliodev.com</td>
         <td>Applio Dev</td>
         <td>http://appliodev.com</td>
-        <td>(778)807-8224</td>
+        <td>(778) 807-8224</td>
     </tr>
     <tr>
         <td>HX91P</td>
@@ -115,7 +115,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
         <td>deleon@infosoft.com</td>
         <td>InfoSoft</td>
         <td>http://infosoft.com</td>
-        <td>(337)838-2223</td>
+        <td>(337) 838-2223</td>
     </tr>
     <tr>
         <td>VJ62A</td>
@@ -123,7 +123,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
         <td>mr@4wireapps.net</td>
         <td>4WireApps</td>
         <td>http://4wireapps.net</td>
-        <td>(639)839-1486</td>
+        <td>(639) 839-1486</td>
     </tr>
     <tr>
     	<td>ES60N</td>
@@ -139,7 +139,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>gnolan@ wsharklabs.com</td>
 		<td>WhiteShark Labs</td>
 		<td>http://wsharklabs.com</td>
-		<td>(859)105-5595</td>
+		<td>(859) 105-5595</td>
 	</tr>
 	<tr>
 		<td>VY76D</td>
@@ -147,7 +147,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>ifarley@wsharklabs.com</td>
 		<td>WhiteShark Labs</td>
 		<td>http://wsharklabs.com</td>
-		<td>(859)105-4502</td>
+		<td>(859) 105-4502</td>
 	</tr>
 </table>
 
@@ -161,6 +161,8 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
         <td><b>Tablet Compatible</b></td>
         <td><b>Category</b></td>
         <td><b>Platform</b></td>
+        <td></td>
+        <td></td>
     </tr>
     <tr>
 		<td>9311E</td>
@@ -169,7 +171,9 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Travel</td>
-		<td>Android iOS BlackBerry</td>
+		<td>Android</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>1363M</td>
@@ -178,7 +182,8 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>1.99</td>
 		<td>Yes</td>
 		<td>Travel</td>
-		<td>iOS BlackBerry</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>3455J</td>
@@ -214,7 +219,8 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td></td>
 		<td>Music</td>
-		<td>Android iOS</td>
+		<td>Android</td>
+		<td>iOS</td>
 	</tr>
 	<tr>
 		<td>6006X</td>
@@ -223,7 +229,9 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Music</td>
-		<td>Android OS BlackBerry</td>
+		<td>Android</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6126C</td>
@@ -232,7 +240,8 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td></td>
 		<td>Travel</td>
-		<td>iOS BlackBerry</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6172B</td>
@@ -241,7 +250,9 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Game</td>
-		<td>Android iOS BlackBerry</td>
+		<td>Android</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6263C</td>
@@ -250,7 +261,9 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>1.99</td>
 		<td></td>
 		<td>Education</td>
-		<td>Android iOS BlackBerry</td>
+		<td>Android</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>7394D</td>
@@ -259,7 +272,9 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td>Yes</td>
 		<td>Game</td>
-		<td>Android iOS BlackBerry</td>
+		<td>Android</td>
+		<td>iOS</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>8987N</td>
@@ -277,7 +292,8 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>3.99</td>
 		<td></td>
 		<td>Music</td>
-		<td>Android iOS</td>
+		<td>Android</td>
+		<td>iOS</td>
 	</tr>
 </table>
 
@@ -285,262 +301,204 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 <table>
 	<tr>
         <td><b>AppID</b></td>
-        <td>
-        	<tr><td><b>tr</b></td></tr>
-        	<tr>
-        		<td><b>Platform</b></td>
-        		<td><b>Downloads</b></td>
-        		<td><b>Rating</b></td>
-        	</tr>
-        </td>
+        <td><b>Platform</b></td>
+        <td><b>Downloads</b></td>
+        <td><b>Rating</b></td>
         <td><b>Last Checked</b></td>
     </tr>
 	<tr>
 		<td>9311E</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>90000</td>
-				<td>5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>15000</td>
-				<td>3</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>42000</td>
-				<td>4.5</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>90000</td>
+		<td>5</td>
+		<td>2012-05-30</td>
+	<tr>
+		<td>9311E</td>
+		<td>iOS</td>
+		<td>15000</td>
+		<td>3</td>
+		<td>2012-05-30</td>
+	</tr>
+	<tr>
+		<td>9311E</td>
+		<td>Blackberry</td>
+		<td>42000</td>
+		<td>4.5</td>
 		<td>2012-05-30</td>
 	</tr>
 	<tr>
 		<td>1363M</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>35000</td>
-				<td>3.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>89000</td>
-				<td>4.5</td>
-			</tr>
-		</td>
+		<td>iOS</td>
+		<td>35000</td>
+		<td>3.5</td>
+		<td>2012-08-15</td>
+	</tr>
+	<tr>
+		<td>1363M</td>
+		<td>Blackberry</td>
+		<td>89000</td>
+		<td>4.5</td>
 		<td>2012-08-15</td>
 	</tr>
 	<tr>
 		<td>3455J</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>83000</td>
-				<td>3.5</td>
-			</tr>
-		</td>
+		<td>iOS</td>
+		<td>83000</td>
+		<td>3.5</td>
 		<td>2012-06-18</td>
 	</tr>
 	<tr>
 		<td>4610N</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>46000</td>
-				<td>2.5</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>46000</td>
+		<td>2.5</td>
 		<td>2012-08-08</td>
 	</tr>
 	<tr>
 		<td>5271X</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>31000</td>
-				<td>4</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>31000</td>
+		<td>4</td>
 		<td>2012-10-30</td>
 	</tr>
 	<tr>
 		<td>5345V</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>7000</td>
-				<td>2.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>95000</td>
-				<td>5</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>7000</td>
+		<td>2.5</td>
+		<td>2012-08-20</td>
+	</tr>
+	<tr>
+		<td>5345V</td>
+		<td>iOS</td>
+		<td>95000</td>
+		<td>5</td>
 		<td>2012-08-20</td>
 	</tr>
 	<tr>
 		<td>6006X</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>66000</td>
-				<td>4</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>45000</td>
-				<td>5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>98000</td>
-				<td>3.5</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>66000</td>
+		<td>4</td>
+		<td>2012-07-31</td>
+	</tr>
+	<tr>
+		<td>6006X</td>
+		<td>Blackberry</td>
+		<td>45000</td>
+		<td>5</td>
+		<td>2012-07-31</td>
+	</tr>
+	<tr>
+		<td>6006X</td>
+		<td>iOS</td>
+		<td>98000</td>
+		<td>3.5</td>
 		<td>2012-07-31</td>
 	</tr>
 	<tr>
 		<td>6126C</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>94000</td>
-				<td>2.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>34000</td>
-				<td>5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>15000</td>
-				<td>2.5</td>
-			</tr>
-		</td>
+		<td>iOS</td>
+		<td>94000</td>
+		<td>2.5</td>
+		<td>2012-07-30</td>
+	</tr>
+	<tr>
+		<td>6126C</td>
+		<td>Android</td>
+		<td>34000</td>
+		<td>5</td>
+		<td>2012-07-30</td>
+	</tr>
+	<tr>
+		<td>6126C</td>
+		<td>Blackberry</td>
+		<td>15000</td>
+		<td>2.5</td>
 		<td>2012-07-30</td>
 	</tr>
 	<tr>
 		<td>6172B</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>8000</td>
-				<td>3</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>3000</td>
-				<td>2</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>12000</td>
-				<td>4</td>
-			</tr>
-		</td>
+		<td>iOS</td>
+		<td>8000</td>
+		<td>3</td>
+		<td>2012-06-30</td>
+	</tr>
+	<tr>
+		<td>6172B</td>
+		<td>Blackberry</td>
+		<td>3000</td>
+		<td>2</td>
+		<td>2012-06-30</td>
+	</tr>
+	<tr>
+		<td>6172B</td>
+		<td>Android</td>
+		<td>12000</td>
+		<td>4</td>
 		<td>2012-06-30</td>
 	</tr>
 	<tr>
 		<td>6263C</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>46000</td>
-				<td>3.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>95000</td>
-				<td>3.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>1000</td>
-				<td>4</td>
-			</tr>
-		</td>
+		<td>iOS</td>
+		<td>46000</td>
+		<td>3.5</td>
+		<td>2012-09-11</td>
+	</tr>
+	<tr>
+		<td>6263C</td>
+		<td>Android</td>
+		<td>95000</td>
+		<td>3.5</td>
+		<td>2012-09-11</td>
+	</tr>
+	<tr>
+		<td>6263C</td>
+		<td>Blackberry</td>
+		<td>1000</td>
+		<td>4</td>
 		<td>2012-09-11</td>
 	</tr>
 	<tr>
 		<td>7394D</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>17000</td>
-				<td>4</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>46000</td>
-				<td>3</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>55000</td>
-				<td>5</td>
-			</tr>
-		</td>
+		<td>Blackberry</td>
+		<td>17000</td>
+		<td>4</td>
+		<td>2012-06-17</td>
+	</tr>
+	<tr>
+		<td>7394D</td>
+		<td>iOS</td>
+		<td>46000</td>
+		<td>3</td>
+		<td>2012-06-17</td>
+	</tr>
+	<tr>
+		<td>7394D</td>
+		<td>Android</td>
+		<td>55000</td>
+		<td>5</td>
 		<td>2012-06-17</td>
 	</tr>
 	<tr>
 		<td>8987N</td>
-		<td>
-			<tr>
-				<td>Blackberry</td>
-				<td>47000</td>
-				<td>3</td>
-			</tr>
-		</td>
+		<td>Blackberry</td>
+		<td>47000</td>
+		<td>3</td>
 		<td>2012-07-04</td>
 	</tr>
 	<tr>
 		<td>9554R</td>
-		<td>
-			<tr>
-				<td>Android</td>
-				<td>5000</td>
-				<td>2.5</td>
-			</tr>
-		</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-				<td>27000</td>
-				<td>2</td>
-			</tr>
-		</td>
+		<td>Android</td>
+		<td>5000</td>
+		<td>2.5</td>
+		<td>2012-08-12</td>
+	</tr>
+	<tr>
+		<td>9554R</td>
+		<td>iOS</td>
+		<td>27000</td>
+		<td>2</td>
 		<td>2012-08-12</td>
 	</tr>
 </table>
