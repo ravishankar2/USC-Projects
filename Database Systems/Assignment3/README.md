@@ -69,6 +69,48 @@ Some prolific users who have uploaded many high quality videos may be invited in
 #### Part 1: Creating the database
 The schema for our database is given by Fig. 1. Primary keys have been underlined. Foreign keys have been omitted, but you are expected to identify and implement them accordingly.
 
+##### Users
+<table>
+    <tr>
+        <td><b>username</b></td><td>password</td><td>name</td><td>email</td><td>date_registered</td>
+    </tr>
+</table>
+
+##### Videos
+<table>
+    <tr>
+        <td><b>video_id</b></td><td>title</td><td>uploaded_by</td><td>uploaded_at</td><td>category</td>
+    </tr>
+</table>
+
+##### Advertisements
+<table>
+    <tr>
+        <td><b>ad_id</b></td><td>advertiser</td><td>price</td><td>views_wanted</td>
+    </tr>
+</table>
+
+##### Ad_Target_Categories
+<table>
+    <tr>
+        <td><b>ad_id</b></td><td><b>category</b></td>
+    </tr>
+</table>
+
+##### Views
+<table>
+    <tr>
+        <td><b>user</b></td><td><b>video</b></td><td><b>viewed_at</b></td><td>rating</td><td>ad_shown</td><td>ad_clicked</td>
+    </tr>
+</table>
+
+##### Partners
+<table>
+    <tr>
+        <td><b>username</b></td><td><b>revenue_share</b></td>
+    </tr>
+</table>
+
 Fig. 1: Schema for VideoSharing
 
 You are expected to prepare and submit a createdb.sql file containing SQL statements that will create a database VideoSharing containing the above tables. Primary keys and foreign keys must be implemented. Choose the most appropriate data type for each field.
@@ -109,11 +151,17 @@ Write the following queries in SQL and run them on your MySQL database via the m
 Do not create or use views. Storing intermediate query results is not an appropriate use of views.
 
 * Q1. List the advertisement ID, and advertiser name and email for each advertisement with a CPM (cost per mille, the price paid per one thousand views wanted) of less than 7 cents.
+
 * Q2. Find the total price of all advertisements targeted at each category. (An advertisement targeted at multiple categories is counted in every category that it is targeted at.)
+
 * Q3. List the names of all advertisers who have had at least one of their advertisements shown more times than they had requested. Each advertiser should not be listed more than once.
+
 * Q4. Find the three partners who earned the most in the month of June 2012. List their names and June 2012 earnings. Partners are paid based on their revenue share and on a per ad shown basis.
+
 * Q5. Find all videos that have received no views since the first two weeks after they were uploaded. For each such video, give the name of the upload user who uploaded it, the video title, and the date and time it was uploaded.
+
 * Q6. List the names of all users in order of date registered with the newest member first. For those users who have uploaded at least one video, also give the number of views on their most-viewed video.
+
 * Q7. Find the five videos with the lowest average rating despite having been rated by their own uploader with the highest rating of 5. List their video ID, title and average rating.
 
 * Q8. Extra credit (Optional)
