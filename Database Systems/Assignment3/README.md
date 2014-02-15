@@ -115,9 +115,13 @@ Do not create or use views. Storing intermediate query results is not an appropr
 * Q5. Find all videos that have received no views since the first two weeks after they were uploaded. For each such video, give the name of the upload user who uploaded it, the video title, and the date and time it was uploaded.
 * Q6. List the names of all users in order of date registered with the newest member first. For those users who have uploaded at least one video, also give the number of views on their most-viewed video.
 * Q7. Find the five videos with the lowest average rating despite having been rated by their own uploader with the highest rating of 5. List their video ID, title and average rating.
+
 * Q8. Extra credit (Optional)
+
 	Find all poorly targeted advertisements.
+	
 	A poorly targeted advertisement is defined as one that has a lower click-through rate (click- to-view percentage) when shown alongside videos that are in categories that it is targeted at, compared to videos that are not in one of the targeted categories.
+	
 	For each such advertisement give the advertisement ID, the name and email address of the advertiser, CPM paid on the advertisement, and the overall click-through rates when targeted and non-targeted. Sort the results with the highest CPM first.
 
 #### Part 4: Querying the database using JDBC
@@ -139,14 +143,20 @@ Sample command line batch files / shell scripts are also provided:
 You should test your program to ensure that they can be executed using the provided *.bat or *.sh files, depending on your OS. Do not modify the contents of any of the *.bat or *.sh files; in particular, the classpath must be used as-is in order to ensure compliance with the grading environment. You are also encouraged to come up with your own test cases using different query arguments. Remember that you can “reset” your database by running dropdb.sql (see Part 5), and then createdb.sql and Populate.java again.
 
 * Q1. Given a year, month and day, provide the username, name and email of users who had registered to the website on that date. For instance, given:
+
 		$ java -classpath .;mysql-connector-java-5.1.22-bin.jar Hw3 dbparams.txt q1 2002 10 18
-		Your program should find users who registered on 18 October 2002 and print the results to the screen in tabular form.
+		
+Your program should find users who registered on 18 October 2002 and print the results to the screen in tabular form.
 * Q2. Given a username and decimal value between 0 and 1, add that user as a partner with the specified revenue share amount. If the user is already a partner, change their revenue share to the specified amount. For instance, given:
+
 		$ java -classpath .;mysql-connector-java-5.1.22-bin.jar Hw3 dbparams.txt q2 Hedley8 0.18
-		Your program should add Hedley8 as a partner with a 18% revenue share if the user was not already a partner, or change the revenue share to 18% if they were already an existing partner. Your program should provide confirmation on whether the operation succeeded or not, and reasons for failure where applicable.
+		
+Your program should add Hedley8 as a partner with a 18% revenue share if the user was not already a partner, or change the revenue share to 18% if they were already an existing partner. Your program should provide confirmation on whether the operation succeeded or not, and reasons for failure where applicable.
 * Q3. Given a decimal value, remove all partners with a revenue share equal to or higher than that:
+
 		$ java -classpath .;mysql-connector-java-5.1.22-bin.jar Hw3 dbparams.txt q3 0.31
-		Your program should remove all partners who receive 31% or more of the advertising revenue from their videos, and provide confirmation on whether the operation succeeded, or provide reasons for failure where applicable.
+
+Your program should remove all partners who receive 31% or more of the advertising revenue from their videos, and provide confirmation on whether the operation succeeded, or provide reasons for failure where applicable.
 
 #### Important note on JDBC (Part 2 and Part 4)
 You are expected to incorporate sensible logic into your programs. For example, if your program is asked to run a query involving an inexistent video, you should return an informative error message. Likewise, you should print an informative message if a query returns no results.
