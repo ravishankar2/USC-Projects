@@ -169,17 +169,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Travel</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>Android iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>1363M</td>
@@ -188,14 +178,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>1.99</td>
 		<td>Yes</td>
 		<td>Travel</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>3455J</td>
@@ -204,11 +187,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td>Yes</td>
 		<td>Productivity</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-			</tr>
-		</td>
+		<td>iOS</td>
 	</tr>
 	<tr>
 		<td>4610N</td>
@@ -217,11 +196,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>3.99</td>
 		<td></td>
 		<td>Travel</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-		</td>
+		<td>Android</td>
 	</tr>
 	<tr>
 		<td>5271X</td>
@@ -230,11 +205,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td>Yes</td>
 		<td>Productivity</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-		</td>
+		<td>Android</td>
 	</tr>
 	<tr>
 		<td>5345V</td>
@@ -243,14 +214,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td></td>
 		<td>Music</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-		</td>
+		<td>Android iOS</td>
 	</tr>
 	<tr>
 		<td>6006X</td>
@@ -259,17 +223,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Music</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>Android OS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6126C</td>
@@ -278,14 +232,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td></td>
 		<td>Travel</td>
-		<td>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6172B</td>
@@ -294,17 +241,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.99</td>
 		<td>Yes</td>
 		<td>Game</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>Android iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>6263C</td>
@@ -313,17 +250,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>1.99</td>
 		<td></td>
 		<td>Education</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>Android iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>7394D</td>
@@ -332,17 +259,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>0.00</td>
 		<td>Yes</td>
 		<td>Game</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>Android iOS BlackBerry</td>
 	</tr>
 	<tr>
 		<td>8987N</td>
@@ -351,11 +268,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>1.99</td>
 		<td>Yes</td>
 		<td>Lifestyle</td>
-		<td>
-			<tr>
-				<td>BlackBerry</td>
-			</tr>
-		</td>
+		<td>BlackBerry</td>
 	</tr>
 	<tr>
 		<td>9554R</td>
@@ -364,14 +277,7 @@ Create a valid XML data file appinfo.xml based on the XML Schema in part 1 for t
 		<td>3.99</td>
 		<td></td>
 		<td>Music</td>
-		<td>
-			<tr>
-				<td>Android</td>
-			</tr>
-			<tr>
-				<td>iOS</td>
-			</tr>
-		</td>
+		<td>Android iOS</td>
 	</tr>
 </table>
 
