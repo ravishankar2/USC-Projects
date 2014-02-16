@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+		var title = "";
+		function CheckInput()
+		{
+			var form = document.getElementById('form');
+			title = form.title.value.trim();
+			if (title == "")
+			{
+				document.getElementById("dynamic_area").innerHTML = "<p style='font-size:21px;'><b>Please enter the title!</b></p>";
+				form.title.focus();
+			}
+			else
+			{
+				req = false;
+				// branch for native XMLHttpRequest object
+				if(window.XMLHttpRequest) 
+				{
+					try 
+					{
+						req = new XMLHttpRequest();
+					}
+					catch(e)
+					{
+						req = false;
+					}
+				}// branch for IE/Windows ActiveX version
+				else if(window.ActiveXObject) 
+				{
+					try 
+					{
+						req = new ActiveXObject("Msxml2.XMLHTTP");
+					} 
+					catch(e) 
+					{
+						try 
+						{
+							req = new ActiveXObject("Microsoft.XMLHTTP");
+						} 
+						catch(e) 
+						{
+							req = false;
+						}
+					}
+				}
+				if(req) 
+				{
+					document.getElementById("dynamic_area").innerHTML = "<p style='font-size:21px;'><b>Loading...</b></p>";
+					var type=document.getElementById('media_type');
+					var url="../servlet/HelloWorldExample?title="+title+"&type="+type.options[type.selectedIndex].value;
+					req.onreadystatechange = CallBack;
+           			req.open("GET",url,true);
+           			req.send();
+           		}
+           	}
+        }
+		function CallBack() 
+        {
+        	// only if req shows "loaded"
+			if (req.readyState == 4) 
+			{
+				// only if "OK"
+				if (req.status == 200) 
+				{
+					var html_content = "";
+					if(req.responseText == "error!")
+					{
+						html_content = "<p style='font-size:21px;'><b>Error in Java Servlets!</b></p>";
+					}
+					else
+                    {
+                    	var json_content = eval ("(" + req.responseText + ")");
+                    	if(json_content.error)
+                    	{
+                    		html_content = "<p style='font-size:21px;'><b>Error in JSON String!</b></p>";
+                    	}
+                    	else
+                    	{
+							var json_node = json_content.results.result;
+							var json_number = json_node.length;
+							if(json_number == 0)
+							{
+								html_content = "<p style='font-size:21px;'><b>No movies found!</b></p>";
+							}
+							else
+							{
+								html_content += "<p style='font-size:21px;'><b>Displaying " + json_number + " results for " + title + "</b></p>"
+								html_content += "<table border='1' style='font-size:15px;'><tr align='center' valign='center'><td>Image</td><td>Title</td><td>Year</td><td>Director</td><td>Rating</td><td>Details</td><td>Post To Facebook</td></tr>";
+								for(var i = 0; i < json_number; i++)
+								{
+						 			html_content += "<tr align='center' valign='center'><td><img src='";
+						 			html_content += json_node[i].cover;
+						 			html_content += "' height='74' width='54'></td><td>";
+						 			html_content += json_node[i].title;
+						 			html_content += "</td><td>";
+						 			html_content += json_node[i].year;
+						 			html_content += "</td><td>";
+						 			html_content += json_node[i].director;
+						 			html_content += "</td><td>";
+						 			html_content += json_node[i].rating;
+						 			html_content += "</td><td><a href='";
+						 			html_content += json_node[i].details;
+						 			html_content += "'>details</a></td><td>";
+						 			html_content += "<img src='facebook.jpg' height='48' width='113' onclick=\"postToFeed('" + json_node[i].title + "','" + json_node[i].cover + "','" + json_node[i].year + "','" + json_node[i].director + "','" + json_node[i].rating + "','" + json_node[i].details + "')\"></td></tr>"
+								}
+								html_content += "</table>";				
+							}
+                    	}
+                    }
+                    document.getElementById("dynamic_area").innerHTML = html_content;
+				}
+			}
+        }
+        function postToFeed(title, cover, year, director, rating, details)
+        {
+	        FB.ui({
+	        	method: 'feed',
+			   	name: title,
+			   	caption: 'I am interested in this movies/series/games',
+			   	description: (
+			    	title + ' released in ' + year + ' has a rating of ' + rating
+			   		),
+			   	link: details,
+			   	picture: cover,
+				properties: { 'Loot at user reviews' : { text : "here", href : details + "reviews" } }
+			 	},
+			  	function(response) {
+			    	if (response && response.post_id) {
+			      		//alert('Post was published.');
+			    	} else {
+			      		//alert('Post was not published.');
+			    	}
+			  	}
+			);
+        }
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    // init the FB JS SDK
+		    FB.init({
+		      appId      : '414679675266013', // App ID from the App Dashboard
+		      channelUrl : '//cs-server.usc.edu:16272/examples/servlets/channel.html', // Channel File for x-domain communication
+		      status     : true, // check the login status upon init?
+		      cookie     : true, // set sessions cookies to allow your server to access the session?
+		      xfbml      : true  // parse XFBML tags on this page?
+		    });
+
+		    // Additional initialization code such as adding Event Listeners goes here
+
+		  };
+
+		  // Load the SDK's source Asynchronously
+		  (function(d, debug){
+		     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement('script'); js.id = id; js.async = true;
+		     js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+		     ref.parentNode.insertBefore(js, ref);
+		   }(document, /*debug*/ false));
+		</script>
+		<div align="center" style="font-family:Arial;">
+			<form id="form" name="search_info" onsubmit="CheckInput(); return false;">
+				<p style="font-size:35px"><b>Movie Search</b></p>
+				<table border="1" width="500" height="180">
+					<tr>
+						<td align="center">
+							<div align="left" style="font-size:20px; padding-left:15px;">Title:
+								<input id="title" name="title" type="text" style="width:300px; height:18px; margin-left:80px; font-size:18px; font-family:Arial;" value=""/>
+							</div>
+							<div align="left" style="font-size:20px; padding-left:15px; padding-top:20px;">Media Type:
+								<select id="media_type" name="media_type" style="width:200px; margin-left:13px; font-size:18px; font-family:Arial;">
+									<option value="all_types">All Types</option>
+									<option value="feature">Feature Film</option>
+									<option value="tv_series">TV Series</option>
+									<option value="game">Video Game</option>
+								</select> 
+							</div>
+							<div>
+								<input style="font-size:18px; font-family:Arial; margin-top:20px;" type="button" value="Search" onclick="CheckInput()">
+							</div>
+						</td>
+					</tr>
+				</table>
+				<div id="dynamic_area" style="font-size:20px;">
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

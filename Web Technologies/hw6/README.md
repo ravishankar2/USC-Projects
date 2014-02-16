@@ -1,15 +1,15 @@
 Web Technologies
 ================
 
-##### Homework 6: Server-side Scripting
+### Homework 6: Server-side Scripting
 
-###### 1. Objectives
+#### 1. Objectives
 
 * Get experience with Perl or PHP programming language;
 * Get experience with CGI programming;
 * Get experience parsing text using regular expressions
 
-###### 2. Description
+#### 2. Description
 In this exercise, you are asked to create a webpage, which allows you to search for a movie or TV series from the Internet Movie Database (IMDb). The information is scraped from the website http://www.imdb.com, and the results will be displayed in the tabular format.
 
 A user will first open the page, called movie_search.html, where he/she can enter the title of the movie or TV series, then select the corresponding type he/she is looking for. For the same name, there may exist many media of different types. If the type does not matter, select “All Types”. An example is shown in Fig 1.
@@ -61,7 +61,7 @@ Some notes:
 
 * You should not use any XML or HTML parsers in Perl or PHP. You should write your own parsing code. Also, all parsing (or scraping) of the web page (or any web page) should be done using Perl regular expressions, and NOT using any Perl libraries especially designed to simplify parsing web pages. This is not to be confused with Perl standard functions, which you are free to use. Examples of such functions are split, print etc.
 
-###### 3. Hints
+#### 3. Hints
 To retrieve a web page you can use the Perl LWP module, and to show special characters correctly you can set Metadata indicating UTF-8.
 
 	#!/usr/bin/perl -w
@@ -85,7 +85,7 @@ To retrieve a web page you can use the Perl LWP module, and to show special char
 
 Other error conditions that should be checked for are: an XML file containing NO customers, an XML file containing an order for a Customer who is not listed. No other error conditions need be checked. In all cases if an error is found your program should show an alert box indicating the error was detected.
 
-###### 4. Options
+#### 4. Options
 Students may use either Perl or PHP to implement this assignment. There are several important points that student must pay attention to:
 
 * If you choose PHP we won’t be able to provide full support, such as answering your detailed questions regarding those two languages. We will, however, try our best to help you finish the assignment. You can always post your questions on PIAZZA; instructors will be happy to assist you. Other students, who are experts in PHP can also help you on PIAZZA.
