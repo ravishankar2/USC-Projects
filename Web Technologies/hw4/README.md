@@ -25,38 +25,38 @@ The table below should be displayed:
 
 Here is a portion of the order.xml file containing some of the Customer data that is displayed above:
 
-	&lt;Root&gt;
-		&lt;Customers&gt;
-			&lt;Customer CustomerID="GREAL"&gt;
-				&lt;CompanyName&gt;Great Lakes Food Market&lt;/CompanyName&gt;
-				&lt;ContactName&gt;Howard Snyder&lt;/ContactName&gt;
-				&lt;ContactTitle&gt;Marketing Manager&lt;/ContactTitle&gt;
-				&lt;Phone&gt;(503) 555-7555&lt;/Phone&gt;
-				&lt;FullAddress&gt;
-					&lt;Address&gt;2732 Baker Blvd.&lt;/Address&gt;
-					&lt;City&gt;Eugene&lt;/City&gt;
-					&lt;Region&gt;OR&lt;/Region&gt;
-					&lt;PostalCode&gt;97403&lt;/PostalCode&gt;
-					&lt;Country&gt;USA&lt;/Country&gt;
-				&lt;/FullAddress&gt;
-			&lt;/Customer&gt;
-			&lt;Customer CustomerID="HUNGC"&gt;
-				&lt;CompanyName&gt;Hungry Coyote Import Store&lt;/CompanyName&gt;
-				&lt;ContactName&gt;Yoshi Latimer&lt;/ContactName&gt;
-				&lt;ContactTitle&gt;Sales Representative&lt;/ContactTitle&gt;
-				&lt;Phone&gt;(503) 555-6874&lt;/Phone&gt;
-				&lt;Fax&gt;(503) 555-2376&lt;/Fax&gt;
-				&lt;FullAddress&gt;
-					&lt;Address&gt;City Center Plaza 516 Main St.&lt;/Address&gt;
-					&lt;City&gt;Elgin&lt;/City&gt;
-					&lt;Region&gt;OR&lt;/Region&gt;
-					&lt;PostalCode&gt;97827&lt;/PostalCode&gt;
-					&lt;Country&gt;USA&lt;/Country&gt;
-				&lt;/FullAddress&gt;
-			&lt;/Customer&gt;
-			&lt;Customer CustomerID="LAZYK"&gt;
-				&lt;Customer CustomerID="LETSS"&gt;
-				&lt;/Customers&gt;
+	<Root>
+		<Customers>
+			<Customer CustomerID="GREAL">
+				<CompanyName>Great Lakes Food Market</CompanyName>
+				<ContactName>Howard Snyder</ContactName>
+				<ContactTitle>Marketing Manager</ContactTitle>
+				<Phone>(503) 555-7555</Phone>
+				<FullAddress>
+					<Address>2732 Baker Blvd.</Address>
+					<City>Eugene</City>
+					<Region>OR</Region>
+					<PostalCode>97403</PostalCode>
+					<Country>USA</Country>
+				</FullAddress>
+			</Customer>
+			<Customer CustomerID="HUNGC">
+				<CompanyName>Hungry Coyote Import Store</CompanyName>
+				<ContactName>Yoshi Latimer</ContactName>
+				<ContactTitle>Sales Representative</ContactTitle>
+				<Phone>(503) 555-6874</Phone>
+				<Fax>(503) 555-2376</Fax>
+				<FullAddress>
+					<Address>City Center Plaza 516 Main St.</Address>
+					<City>Elgin</City>
+					<Region>OR</Region>
+					<PostalCode>97827</PostalCode>
+					<Country>USA</Country>
+				</FullAddress>
+			</Customer>
+			<Customer CustomerID="LAZYK">
+				<Customer CustomerID="LETSS">
+				</Customers>
 
 ###### 3. Error Handling
 In case of a parsing error, your program should show an alert box indicating an error was detected. For example if you try to load the incorrectly formatted XML file:
@@ -74,38 +74,38 @@ After you output the table of Customers, a viewer may select one of the Customer
 
 Here is a portion of the order.xml file containing the order data for Customer LAZYK:
 
-	&lt;Order&gt;
-		&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
-		&lt;EmployeeID&gt;1&lt;/EmployeeID&gt;
-		&lt;OrderDate&gt;1997-03-21&lt;/OrderDate&gt;
-		&lt;RequiredDate&gt;1997-04-18&lt;/RequiredDate&gt;
-		&lt;ShipInfo Shipped Date="1997-04-10"&gt;
-			&lt;ShipVia&gt;3&lt;/ShipVia&gt;
-			&lt;Freight&gt;7.48&lt;/Freight&gt;
-			&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
-			&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
-			&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
-			&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
-			&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
-			&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
-		&lt;/ShipInfo&gt;
-	&lt;/Order&gt;
-	&lt;Order&gt;
-		&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
-		&lt;EmployeeID&gt;8&lt;/EmployeeID&gt;
-		&lt;OrderDate&gt;1997-05-22&lt;/OrderDate&gt;
-		&lt;RequiredDate&gt;1997-06-19&lt;/RequiredDate&gt;
-		&lt;ShipInfo ShippedDate="1997-06-26"&gt;
-			&lt;ShipVia&gt;2&lt;/ShipVia&gt;
-			&lt;Freight&gt;11.92&lt;/Freight&gt;
-			&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
-			&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
-			&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
-			&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
-			&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
-			&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
-		&lt;/ShipInfo&gt;
-	&lt;/Order&gt;
+	<Order>
+		<CustomerID>LAZYK</CustomerID>
+		<EmployeeID>1</EmployeeID>
+		<OrderDate>1997-03-21</OrderDate>
+		<RequiredDate>1997-04-18</RequiredDate>
+		<ShipInfo Shipped Date="1997-04-10">
+			<ShipVia>3</ShipVia>
+			<Freight>7.48</Freight>
+			<ShipName>Lazy K Kountry Store</ShipName>
+			<ShipAddress>12 Orchestra Terrace</ShipAddress>
+			<ShipCity>Walla Walla</ShipCity>
+			<ShipRegion>WA</ShipRegion>
+			<ShipPostalCode>99362</ShipPostalCode>
+			<ShipCountry>USA</ShipCountry>
+		</ShipInfo>
+	</Order>
+	<Order>
+		<CustomerID>LAZYK</CustomerID>
+		<EmployeeID>8</EmployeeID>
+		<OrderDate>1997-05-22</OrderDate>
+		<RequiredDate>1997-06-19</RequiredDate>
+		<ShipInfo ShippedDate="1997-06-26">
+			<ShipVia>2</ShipVia>
+			<Freight>11.92</Freight>
+			<ShipName>Lazy K Kountry Store</ShipName>
+			<ShipAddress>12 Orchestra Terrace</ShipAddress>
+			<ShipCity>Walla Walla</ShipCity>
+			<ShipRegion>WA</ShipRegion>
+			<ShipPostalCode>99362</ShipPostalCode>
+			<ShipCountry>USA</ShipCountry>
+		</ShipInfo>
+	</Order>
 
 ###### 5. Hints
 
@@ -113,7 +113,7 @@ Here is a portion of the order.xml file containing the order data for Customer L
 
 Here's how you could use the Microsoft DOM API and the Mozilla DOM API (used in Firefox) to load and parse an XML document into a DOM tree, and then use the DOM API to extract information from that document.
 
-	&lt;script LANGUAGE=JavaScript&gt;
+	<script LANGUAGE=JavaScript>
 	//create an instance of the XML parser; we are only concerned with Firefox
 	if (document.implementation && document.implementation.createDocument){
 		var xmlDoc=document.implementation.createDocument("","doc",null);
@@ -125,7 +125,7 @@ Here's how you could use the Microsoft DOM API and the Mozilla DOM API (used in 
 			alert(xmlDoc.xml);
 		}
 	}
-	&lt;/script&gt;
+	</script>
 
 Now you can generate the HTML table from the DOM tree. You can assume that every xml file containing Customers and Orders will have identical tag names. However, the Customer entries and the Order entries may occur interchangeably. If there are no Customers than there are no orders. If at least one Customer is contained in the XML file then there must be at least one order associated with that Customer.
 
