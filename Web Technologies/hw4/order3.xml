@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Customers>
+    <Customer CustomerID="GREAL">
+      <CompanyName>Great Lakes Food Market</CompanyName>
+      <ContactName>Howard Snyder</ContactName>
+      <ContactTitle>Marketing Manager</ContactTitle>
+      <Phone>(503) 555-7555</Phone>
+      <FullAddress>
+        <Address>2732 Baker Blvd.</Address>
+        <City>Eugene</City>
+        <Region>OR</Region>
+        <PostalCode>97403</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
+    <Customer CustomerID="HUNGC">
+      <CompanyName>Hungry Coyote Import Store</CompanyName>
+      <ContactName>Yoshi Latimer</ContactName>
+      <ContactTitle>Sales Representative</ContactTitle>
+      <Phone>(503) 555-6874</Phone>
+      <Fax>(503) 555-2376</Fax>
+      <FullAddress>
+        <Address>City Center Plaza 516 Main St.</Address>
+        <City>Elgin</City>
+        <Region>OR</Region>
+        <PostalCode>97827</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
+    <Customer CustomerID="LAZYK">
+      <CompanyName>Lazy K Kountry Store</CompanyName>
+      <ContactName>John Steel</ContactName>
+      <ContactTitle>Marketing Manager</ContactTitle>
+      <Phone>(509) 555-7969</Phone>
+      <Fax>(509) 555-6221</Fax>
+      <FullAddress>
+        <Address>12 Orchestra Terrace</Address>
+        <City>Walla Walla</City>
+        <Region>WA</Region>
+        <PostalCode>99362</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
+  </Customers>
+  <Orders>
+    <Order>
+      <CustomerID>GREAL</CustomerID>
+      <EmployeeID>6</EmployeeID>
+      <OrderDate>1997-05-06</OrderDate>
+      <RequiredDate>1997-05-20</RequiredDate>
+      <ShipInfo ShippedDate="1997-05-09">
+        <ShipVia>2</ShipVia>
+        <Freight>3.35</Freight>
+        <ShipName>Great Lakes Food Market</ShipName>
+        <ShipAddress>2732 Baker Blvd.</ShipAddress>
+        <ShipCity>Eugene</ShipCity>
+        <ShipRegion>OR</ShipRegion>
+        <ShipPostalCode>97403</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>HUNGC</CustomerID>
+      <EmployeeID>3</EmployeeID>
+      <OrderDate>1996-12-06</OrderDate>
+      <RequiredDate>1997-01-03</RequiredDate>
+      <ShipInfo ShippedDate="1996-12-09">
+        <ShipVia>2</ShipVia>
+        <Freight>20.12</Freight>
+        <ShipName>Hungry Coyote Import Store</ShipName>
+        <ShipAddress>City Center Plaza 516 Main St.</ShipAddress>
+        <ShipCity>Elgin</ShipCity>
+        <ShipRegion>OR</ShipRegion>
+        <ShipPostalCode>97827</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>LAZYK</CustomerID>
+      <EmployeeID>1</EmployeeID>
+      <OrderDate>1997-03-21</OrderDate>
+      <RequiredDate>1997-04-18</RequiredDate>
+      <ShipInfo ShippedDate="1997-04-10">
+        <ShipVia>3</ShipVia>
+        <Freight>7.48</Freight>
+        <ShipName>Lazy K Kountry Store</ShipName>
+        <ShipAddress>12 Orchestra Terrace</ShipAddress>
+        <ShipCity>Walla Walla</ShipCity>
+        <ShipRegion>WA</ShipRegion>
+        <ShipPostalCode>99362</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>XYZ</CustomerID>
+      <EmployeeID>1</EmployeeID>
+      <OrderDate>1997-03-21</OrderDate>
+      <RequiredDate>1997-04-18</RequiredDate>
+      <ShipInfo ShippedDate="1997-04-10">
+        <ShipVia>3</ShipVia>
+        <Freight>7.48</Freight>
+        <ShipName>Lazy K Kountry Store</ShipName>
+        <ShipAddress>12 Orchestra Terrace</ShipAddress>
+        <ShipCity>Walla Walla</ShipCity>
+        <ShipRegion>WA</ShipRegion>
+        <ShipPostalCode>99362</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>123</CustomerID>
+      <EmployeeID>1</EmployeeID>
+      <OrderDate>1997-03-21</OrderDate>
+      <RequiredDate>1997-04-18</RequiredDate>
+      <ShipInfo ShippedDate="1997-04-10">
+        <ShipVia>3</ShipVia>
+        <Freight>7.48</Freight>
+        <ShipName>Lazy K Kountry Store</ShipName>
+        <ShipAddress>12 Orchestra Terrace</ShipAddress>
+        <ShipCity>Walla Walla</ShipCity>
+        <ShipRegion>WA</ShipRegion>
+        <ShipPostalCode>99362</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+      <Order>
+      <CustomerID>ABC</CustomerID>
+      <EmployeeID>1</EmployeeID>
+      <OrderDate>1997-03-21</OrderDate>
+      <RequiredDate>1997-04-18</RequiredDate>
+      <ShipInfo ShippedDate="1997-04-10">
+        <ShipVia>3</ShipVia>
+        <Freight>7.48</Freight>
+        <ShipName>Lazy K Kountry Store</ShipName>
+        <ShipAddress>12 Orchestra Terrace</ShipAddress>
+        <ShipCity>Walla Walla</ShipCity>
+        <ShipRegion>WA</ShipRegion>
+        <ShipPostalCode>99362</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+  </Orders>
+</Root>

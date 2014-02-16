@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Customers>
+    <Customer CustomerID="GREAL">
+      <CompanyName>Great Lakes Food Market</CompanyName>
+      <ContactName>Howard Snyder</ContactName>
+      <ContactTitle>Marketing Manager</ContactTitle>
+      <Phone>(503) 555-7555</Phone>
+      <FullAddress>
+        <Address>2732 Baker Blvd.</Address>
+        <City>Eugene</City>
+        <Region>OR</Region>
+        <PostalCode>97403</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
+  <Orders>
+    <Order>
+      <CustomerID>GREAL</CustomerID>
+      <EmployeeID>6</EmployeeID>
+      <OrderDate>1997-05-06</OrderDate>
+      <RequiredDate>1997-05-20</RequiredDate>
+      <ShipInfo ShippedDate="1997-05-09">
+        <ShipVia>2</ShipVia>
+        <Freight>3.35</Freight>
+        <ShipName>Great Lakes Food Market</ShipName>
+        <ShipAddress>2732 Baker Blvd.</ShipAddress>
+        <ShipCity>Eugene</ShipCity>
+        <ShipRegion>OR</ShipRegion>
+        <ShipPostalCode>97403</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+
+      <CustomerID>LETSS</CustomerID>
+      <EmployeeID>1</EmployeeID>
+      <OrderDate>1997-06-25</OrderDate>
+      <RequiredDate>1997-07-23</RequiredDate>
+      <ShipInfo ShippedDate="1997-07-04">
+        <ShipVia>2</ShipVia>
+        <Freight>13.73</Freight>
+        <ShipName>Let's Stop N Shop</ShipName>
+        <ShipAddress>87 Polk St. Suite 5</ShipAddress>
+        <ShipCity>San Francisco</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94117</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>LETSS</CustomerID>
+      <EmployeeID>8</EmployeeID>
+      <OrderDate>1997-10-27</OrderDate>
+      <RequiredDate>1997-11-24</RequiredDate>
+      <ShipInfo ShippedDate="1997-11-05">
+        <ShipVia>2</ShipVia>
+        <Freight>51.44</Freight>
+        <ShipName>Let's Stop N Shop</ShipName>
+        <ShipAddress>87 Polk St. Suite 5</ShipAddress>
+        <ShipCity>San Francisco</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94117</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>LETSS</CustomerID>
+      <EmployeeID>6</EmployeeID>
+      <OrderDate>1997-11-10</OrderDate>
+      <RequiredDate>1997-12-08</RequiredDate>
+      <ShipInfo ShippedDate="1997-11-21">
+        <ShipVia>2</ShipVia>
+        <Freight>45.97</Freight>
+        <ShipName>Let's Stop N Shop</ShipName>
+        <ShipAddress>87 Polk St. Suite 5</ShipAddress>
+        <ShipCity>San Francisco</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94117</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>LETSS</CustomerID>
+      <EmployeeID>4</EmployeeID>
+      <OrderDate>1998-02-12</OrderDate>
+      <RequiredDate>1998-03-12</RequiredDate>
+      <ShipInfo ShippedDate="1998-02-13">
+        <ShipVia>2</ShipVia>
+        <Freight>90.97</Freight>
+        <ShipName>Let's Stop N Shop</ShipName>
+        <ShipAddress>87 Polk St. Suite 5</ShipAddress>
+        <ShipCity>San Francisco</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94117</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+  </Orders>
