@@ -25,38 +25,38 @@ The table below should be displayed:
 
 Here is a portion of the order.xml file containing some of the Customer data that is displayed above:
 
-&lt;Root&gt;
-	&lt;Customers&gt;
-		&lt;Customer CustomerID="GREAL"&gt;
-			&lt;CompanyName&gt;Great Lakes Food Market&lt;/CompanyName&gt;
-			&lt;ContactName&gt;Howard Snyder&lt;/ContactName&gt;
-			&lt;ContactTitle&gt;Marketing Manager&lt;/ContactTitle&gt;
-			&lt;Phone&gt;(503) 555-7555&lt;/Phone&gt;
-			&lt;FullAddress&gt;
-				&lt;Address&gt;2732 Baker Blvd.&lt;/Address&gt;
-				&lt;City&gt;Eugene&lt;/City&gt;
-				&lt;Region&gt;OR&lt;/Region&gt;
-				&lt;PostalCode&gt;97403&lt;/PostalCode&gt;
-				&lt;Country&gt;USA&lt;/Country&gt;
-			&lt;/FullAddress&gt;
-		&lt;/Customer&gt;
-		&lt;Customer CustomerID="HUNGC"&gt;
-			&lt;CompanyName&gt;Hungry Coyote Import Store&lt;/CompanyName&gt;
-			&lt;ContactName&gt;Yoshi Latimer&lt;/ContactName&gt;
-			&lt;ContactTitle&gt;Sales Representative&lt;/ContactTitle&gt;
-			&lt;Phone&gt;(503) 555-6874&lt;/Phone&gt;
-			&lt;Fax&gt;(503) 555-2376&lt;/Fax&gt;
-			&lt;FullAddress&gt;
-				&lt;Address&gt;City Center Plaza 516 Main St.&lt;/Address&gt;
-				&lt;City&gt;Elgin&lt;/City&gt;
-				&lt;Region&gt;OR&lt;/Region&gt;
-				&lt;PostalCode&gt;97827&lt;/PostalCode&gt;
-				&lt;Country&gt;USA&lt;/Country&gt;
-			&lt;/FullAddress&gt;
-		&lt;/Customer&gt;
-		&lt;Customer CustomerID="LAZYK"&gt;
-			&lt;Customer CustomerID="LETSS"&gt;
-			&lt;/Customers&gt;
+	&lt;Root&gt;
+		&lt;Customers&gt;
+			&lt;Customer CustomerID="GREAL"&gt;
+				&lt;CompanyName&gt;Great Lakes Food Market&lt;/CompanyName&gt;
+				&lt;ContactName&gt;Howard Snyder&lt;/ContactName&gt;
+				&lt;ContactTitle&gt;Marketing Manager&lt;/ContactTitle&gt;
+				&lt;Phone&gt;(503) 555-7555&lt;/Phone&gt;
+				&lt;FullAddress&gt;
+					&lt;Address&gt;2732 Baker Blvd.&lt;/Address&gt;
+					&lt;City&gt;Eugene&lt;/City&gt;
+					&lt;Region&gt;OR&lt;/Region&gt;
+					&lt;PostalCode&gt;97403&lt;/PostalCode&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/FullAddress&gt;
+			&lt;/Customer&gt;
+			&lt;Customer CustomerID="HUNGC"&gt;
+				&lt;CompanyName&gt;Hungry Coyote Import Store&lt;/CompanyName&gt;
+				&lt;ContactName&gt;Yoshi Latimer&lt;/ContactName&gt;
+				&lt;ContactTitle&gt;Sales Representative&lt;/ContactTitle&gt;
+				&lt;Phone&gt;(503) 555-6874&lt;/Phone&gt;
+				&lt;Fax&gt;(503) 555-2376&lt;/Fax&gt;
+				&lt;FullAddress&gt;
+					&lt;Address&gt;City Center Plaza 516 Main St.&lt;/Address&gt;
+					&lt;City&gt;Elgin&lt;/City&gt;
+					&lt;Region&gt;OR&lt;/Region&gt;
+					&lt;PostalCode&gt;97827&lt;/PostalCode&gt;
+					&lt;Country&gt;USA&lt;/Country&gt;
+				&lt;/FullAddress&gt;
+			&lt;/Customer&gt;
+			&lt;Customer CustomerID="LAZYK"&gt;
+				&lt;Customer CustomerID="LETSS"&gt;
+				&lt;/Customers&gt;
 
 ###### 3. Error Handling
 In case of a parsing error, your program should show an alert box indicating an error was detected. For example if you try to load the incorrectly formatted XML file:
@@ -73,38 +73,39 @@ After you output the table of Customers, a viewer may select one of the Customer
 ![figure4](images/figure4.png)
 
 Here is a portion of the order.xml file containing the order data for Customer LAZYK:
-&lt;Order&gt;
-	&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
-	&lt;EmployeeID&gt;1&lt;/EmployeeID&gt;
-	&lt;OrderDate&gt;1997-03-21&lt;/OrderDate&gt;
-	&lt;RequiredDate&gt;1997-04-18&lt;/RequiredDate&gt;
-	&lt;ShipInfo Shipped Date="1997-04-10"&gt;
-		&lt;ShipVia&gt;3&lt;/ShipVia&gt;
-		&lt;Freight&gt;7.48&lt;/Freight&gt;
-		&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
-		&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
-		&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
-		&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
-		&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
-		&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
-	&lt;/ShipInfo&gt;
-&lt;/Order&gt;
-&lt;Order&gt;
-	&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
-	&lt;EmployeeID&gt;8&lt;/EmployeeID&gt;
-	&lt;OrderDate&gt;1997-05-22&lt;/OrderDate&gt;
-	&lt;RequiredDate&gt;1997-06-19&lt;/RequiredDate&gt;
-	&lt;ShipInfo ShippedDate="1997-06-26"&gt;
-		&lt;ShipVia&gt;2&lt;/ShipVia&gt;
-		&lt;Freight&gt;11.92&lt;/Freight&gt;
-		&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
-		&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
-		&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
-		&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
-		&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
-		&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
-	&lt;/ShipInfo&gt;
-&lt;/Order&gt;
+
+	&lt;Order&gt;
+		&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
+		&lt;EmployeeID&gt;1&lt;/EmployeeID&gt;
+		&lt;OrderDate&gt;1997-03-21&lt;/OrderDate&gt;
+		&lt;RequiredDate&gt;1997-04-18&lt;/RequiredDate&gt;
+		&lt;ShipInfo Shipped Date="1997-04-10"&gt;
+			&lt;ShipVia&gt;3&lt;/ShipVia&gt;
+			&lt;Freight&gt;7.48&lt;/Freight&gt;
+			&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
+			&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
+			&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
+			&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
+			&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
+			&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
+		&lt;/ShipInfo&gt;
+	&lt;/Order&gt;
+	&lt;Order&gt;
+		&lt;CustomerID&gt;LAZYK&lt;/CustomerID&gt;
+		&lt;EmployeeID&gt;8&lt;/EmployeeID&gt;
+		&lt;OrderDate&gt;1997-05-22&lt;/OrderDate&gt;
+		&lt;RequiredDate&gt;1997-06-19&lt;/RequiredDate&gt;
+		&lt;ShipInfo ShippedDate="1997-06-26"&gt;
+			&lt;ShipVia&gt;2&lt;/ShipVia&gt;
+			&lt;Freight&gt;11.92&lt;/Freight&gt;
+			&lt;ShipName&gt;Lazy K Kountry Store&lt;/ShipName&gt;
+			&lt;ShipAddress&gt;12 Orchestra Terrace&lt;/ShipAddress&gt;
+			&lt;ShipCity&gt;Walla Walla&lt;/ShipCity&gt;
+			&lt;ShipRegion&gt;WA&lt;/ShipRegion&gt;
+			&lt;ShipPostalCode&gt;99362&lt;/ShipPostalCode&gt;
+			&lt;ShipCountry&gt;USA&lt;/ShipCountry&gt;
+		&lt;/ShipInfo&gt;
+	&lt;/Order&gt;
 
 ###### 5. Hints
 
