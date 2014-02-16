@@ -130,7 +130,7 @@ Next, the user is allowed to click on “Facebook” button adjacent to a partic
 ![figure3](images/figure3.png)
 
 #### 4. Implementation Hints
-1. Step 1: Writing your JavaScript Program – set up an Ajax transaction
+##### Step 1: Writing your JavaScript Program – set up an Ajax transaction
 
 The JavaScript invoked by the Search button click event should do all of the following:
 
@@ -145,12 +145,12 @@ The JavaScript invoked by the Search button click event should do all of the fol
 	req.setRequestHeader("Connection", "Close");
 	req.setRequestHeader("Method", "GET" + url + "HTTP/1.1");
 
-2. Step 2: Writing your JavaScript Program – Execute Ajax Transaction
+##### Step 2: Writing your JavaScript Program – Execute Ajax Transaction
 The JavaScript should finally invoke the XMLHttpRequest send method (see Ajax slide 24).
 
 The “callback” function should check for completion of the transaction (request readyState equal to 4 and status equal to 200 (see AJAX slide 27 and JSON slide 5); use eval() and the responseText method to retrieve the resulting JSON data (see JSON slide 5), and displaying the returned media information properties to the “dynamic” area.
 
-3. Step 3: Use the Java Servlet to respond to XMLHttpRequest and retrieve the media information listings from imdb
+##### Step 3: Use the Java Servlet to respond to XMLHttpRequest and retrieve the media information listings from imdb
 
 The Java Servlet referred above as /servlet/MyServlet (see 1.c above) should be invoked using doGet().
 
@@ -158,7 +158,7 @@ The Java Servlet should do all of the following:
 
 * Initiating a connection with the Perl or PHP script, using the Apache server from Homework #6, to retrieve the media listings by scraping imdb.com.
 
-4. Step 4: Use the Java Servlet to retrieve the XML file content
+Step 4: Use the Java Servlet to retrieve the XML file content
 You may have to use an XML parser (for example: JAXP). Steps to retrieve XML file contents are as follows:
 
 Step a: Get the XML content based on the URL above in Step 3.a.
@@ -172,11 +172,12 @@ Step a: Get the XML content based on the URL above in Step 3.a.
 	//read content
 
 Step b: Parse the XML file using an XML parser
+
 * Any XML parser can be used to parse the XML file. You can use methods like getNodeName() to access these elements. A good choice might be the JDOM library, which you get from:
 
 http://www.jdom.org/downloads/index.html
 
-5. Step 5: Use the Java Servlet to process the XML data
+##### Step 5: Use the Java Servlet to process the XML data
 As you parse the data, you will build an output string, converting the XML data into JSON format, as described in section 3.
 
 Finally you will return the JSON as a single string to the calling JavaScript program. To easily create a JSON string, you might find useful the JSON-RPC library available at:
@@ -185,11 +186,11 @@ http://mirrors.ibiblio.org/pub/mirrors/maven/com.metaparadigm/jars/json-rpc-1.0.
 
 The Java Servlet should handle exceptions such as MalformedURLException and IOException. The Java Servlet should also handle error responses sent from the Apache servlet and reply with an appropriate error, a JSON message to the initial JavaScript XMLHttpRequest. This way, the JavaScript callback function will be able to inform the user that an error has occurred.
 
-6. Step 6: Writing your JavaScript Program – Post media details to Facebook
+##### Step 6: Writing your JavaScript Program – Post media details to Facebook
 
 Once the media properties are displayed in the dynamic area, the user should be able to click on the “Facebook” button for the corresponding entry in the table.
 
-7. Step 7: Writing your JavaScript Program – Authorize Facebook User
+##### Step 7: Writing your JavaScript Program – Authorize Facebook User
 Once the user clicks on the Facebook button, the program invokes the Facebook Connect API and authorizes the user. The recommended API to use is FB.Init, which is documented at:
 
 http://developers.facebook.com/docs/reference/javascript/FB.init/
@@ -198,7 +199,7 @@ Also look at the code listed under “Loading” in the JavaScript SDK page at:
 
 https://developers.facebook.com/docs/reference/javascript/
 
-8. Step 8: Writing your JavaScript Program – Post media information to Facebook News Feed
+##### Step 8: Writing your JavaScript Program – Post media information to Facebook News Feed
 There are several methods to post a message to the user’s feed page (the “wall”).
 
 One such method uses the Fb.ui() API with the feed dialog, documented at:
@@ -215,7 +216,7 @@ Additional information that may be useful to you is available at Facebook for We
 
 https://developers.facebook.com/docs/guides/web/
 
-9. Step 9 : Install the firefox add-on “Disable HTTP Referer at Startup”
+##### Step 9 : Install the firefox add-on “Disable HTTP Referer at Startup”
 By default, Imdb blocks scraping of images by looking at the Http-referer. If it sees that the request is not coming from their site, it either blocks or throttles access. As a result, when you try to access the image url in your code, the image is not displayed. The solution is to disable the http-referer by using a firefox addon called “Disable HTTP Referer at Startup”.
 
 More information about HTTP Referer :
@@ -230,25 +231,18 @@ https://addons.mozilla.org/en-US/firefox/addon/disable-http-referer-at-sta/
 This homework requires the use of the following components:
 
 1. A servlet-based web server, Tomcat 4.1.27. Instructions on how to load Tomcat 4.1.27 can be found here:
-
 http://www-scf.usc.edu/~csci571/2006Spring/tomcatinstall.html.
-
 A tar version of Tomcat 4.1.27 can be found here:
-
 http://www-scf.usc.edu/~csci571/download/jakarta-tomcat-4.1.27.tar.
 
 2. The Java Servlet library (servlet-api.jar) to perform HTTP transactions using methods such as doGet() or doPost() from Java.
-
 You may find it here :
-
 http://repo1.maven.org/maven2/javax/servlet/servlet-api/2.5/
 
 3. A Java XML parser library. You may use the JDOM 1.1.3, an object model that uses XML parsers to build documents, available in the Download section of the jdom website
-
 http://www.jdom.org/downloads/index.html
 
 4. You may also use JAXP, the Java API for XML Parsing. A good tutorial on JAXP is available at
-
 http://www-106.ibm.com/developerworks/xml/library/x-jaxp1.html or http://docs.oracle.com/javase/tutorial/jaxp/intro/index.html
 
 5. You need to create a Facebook Platform application:
