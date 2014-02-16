@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+"http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+	<head>
+		<script type="text/javascript">
+			function CheckInput()
+			{
+				var form = document.getElementById('form');
+				var title = form.title.value.trim();
+				if (title == "")
+				{
+					alert("Please enter the title.");
+					form.title.focus();
+					return false;
+				}
+				else
+				{
+					return true;
+				}
+			}
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</head>
+	<body>
+		<div align="center" style="font-family:Arial;">
+			<form id="form" name="search_info" action="get_movies.php" method="POST" onsubmit="return CheckInput();">
+				<p style="font-size:35px"><b>Movie Search</b></p>
+				<table border="1" width="500" height="180">
+					<tr>
+						<td align="center">
+							<div align="left" style="font-size:20px; padding-left:15px;">Title:
+								<input name="title" type="text" style="width:300px; height:18px; margin-left:80px; font-size:18px; font-family:Arial;" value=""/>
+							</div>
+							<div align="left" style="font-size:20px; padding-left:15px; padding-top:20px;">Media Type:
+								<select name="media_type" style="width:200px; margin-left:13px; font-size:18px; font-family:Arial;">
+									<option value="all_types">All Types</option>
+									<option value="feature">Feature Film</option>
+									<option value="tv_series">TV Series</option>
+									<option value="game">Video Game</option>
+								</select> 
+							</div>
+							<div>
+								<input style="font-size:18px; font-family:Arial; margin-top:20px;" type="submit" value="Search">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>
