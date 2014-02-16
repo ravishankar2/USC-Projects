@@ -158,7 +158,7 @@ The Java Servlet should do all of the following:
 
 * Initiating a connection with the Perl or PHP script, using the Apache server from Homework #6, to retrieve the media listings by scraping imdb.com.
 
-Step 4: Use the Java Servlet to retrieve the XML file content
+##### Step 4: Use the Java Servlet to retrieve the XML file content
 You may have to use an XML parser (for example: JAXP). Steps to retrieve XML file contents are as follows:
 
 Step a: Get the XML content based on the URL above in Step 3.a.
