@@ -134,20 +134,19 @@ d/or previoius)
 
 * Input is an ASCII text file
 	Each line in a tfile contains 4 fields delimited by <TAB>
-		- transcation type (single character)
+	- transcation type (single character)
 
-			"+" for deposit
+		"+" for deposit
 
-			"-" for withdrawal
+		"-" for withdrawal
 
-		- transcation time (UNIX time)
+	- transcation time (UNIX time)
 
-			man -s 2 time
+		man -s 2 time
+	- amount (a number, a period, two digits)
+	- transcation description (textual description)
 
-		- amount (a number, a period, two digits)
-		- transcation description (textual description)
-
-			cannot be empty
+		cannot be empty
 
 ###### Reading Text Input
 * Read in an entire line using fgets()
@@ -160,26 +159,33 @@ d/or previoius)
 	- read man pages of fopen()
 	- if a filename is not given, you will be reading from "standard input" (i.e., file descriptor 0)
 
-		FILE *fp = stdin;
+
+			FILE *fp = stdin;
+
 
 	－ pass the file pointer around so that you run the same code whether you input comes from a file or stdin
 
-		My420List list;
-	    if (!My402ListInit(&list)) { /* error */ }
-	    if (!ReadInput(fp, &list)) { /* error */ }
-	    if (fp != stdin) fclose(fp);
-	    SortInput(&list);
-	    PrintStatement(&list);
+			My420List list;
+		
+		
+			if (!My402ListInit(&list)) { /* error */ }
+			if (!ReadInput(fp, &list)) { /* error */ }
+			if (fp != stdin) fclose(fp);
+			SortInput(&list);
+			PrintStatement(&list);
+
 
 ###### Parsing Text Input
 * Read a line
 	
-	char buf[1026];
-       if (fgets(buf, sizeof(buf), fp) == NULL) {
-         /* end of file */
-       } else {
-         /* parse it */
-	}
+
+			char buf[1026];
+			if (fgets(buf, sizeof(buf), fp) == NULL) {
+			/* end of file */
+			} else {
+			/* parse it */
+			}
+
 
 * Parse a line according to the spec
 	- find an easy and correct way to parse the 
@@ -247,13 +253,15 @@ d/or previoius)
 
 		becareful, ctime() returns a pointer that points to a global variable, so you must make a copy
 
-		char date[16];
-		char buf[26];
-		strncpy(buf, sizeof(buf), ctime(...));
-		date[0] = buf[0];
-		date[1] = buf[1];
-		...
-		date[15] = ’\0’;
+
+			char date[16];
+			char buf[26];
+			strncpy(buf, sizeof(buf), ctime(...));
+			date[0] = buf[0];
+			date[1] = buf[1];
+			...
+			date[15] = ’\0’;
+
 
 * Format your data in your own buffer
 	- write a function to "format" numeric fields into null-terminated strings
