@@ -118,21 +118,21 @@ http://merlot.usc.edu/cs402-s13/
 	- parent thread blocks SIGINT
 
 
-		#include <pthread.h>
-		/* #include <thread.h> */
-		thread_t user_threadID;
-		sigset_t new;
-		void *handler(), interrupt();
-		main( int argc, char *argv[] )  {
-			sigemptyset(&new);
-			sigaddset(&new, SIGINT);
-			pthread_sigmask(SIG_BLOCK, &new, NULL);
-			pthread_create(&user_threadID, NULL, handler, argv[1]);
-			pthread_join(user_threadID, NULL);
-			printf("thread handler, %d exited\n",user_threadID);
-			sleep(2);
-			printf("main thread, %d is done\n", thr_self());
-		} /* end main */
+			#include <pthread.h>
+			/* #include <thread.h> */
+			thread_t user_threadID;
+			sigset_t new;
+			void *handler(), interrupt();
+			main( int argc, char *argv[] )  {
+				sigemptyset(&new);
+				sigaddset(&new, SIGINT);
+				pthread_sigmask(SIG_BLOCK, &new, NULL);
+				pthread_create(&user_threadID, NULL, handler, argv[1]);
+				pthread_join(user_threadID, NULL);
+				printf("thread handler, %d exited\n",user_threadID);
+				sleep(2);
+				printf("main thread, %d is done\n", thr_self());
+			} /* end main */
 
 
 ###### pthread_sigmask()
@@ -140,20 +140,25 @@ http://merlot.usc.edu/cs402-s13/
 	- child thread unblocks SIGINT
 
 
-		struct sigaction act;
-		void *
-		handler(char argv1[])
-		{
-			act.sa_handler = interrupt;
-			sigaction(SIGINT, &act, NULL);
-			pthread_sigmask(SIG_UNBLOCK, &new, NULL);
-			printf("\n Press CTRL-C to deliver SIGINT\n");
-			sleep(8);  /* give user time to hit CTRL-C */
-		}
-		void
-		interrupt(int sig)
-		{
-			printf("thread %d caught signal %d\n", thr_self(), sig);
-		}
+			struct sigaction act;
+			void *
+			handler(char argv1[])
+			{
+				act.sa_handler = interrupt;
+				sigaction(SIGINT, &act, NULL);
+				pthread_sigmask(SIG_UNBLOCK, &new, NULL);
+				printf("\n Press CTRL-C to deliver SIGINT\n");
+				sleep(8);  /* give user time to hit CTRL-C */
+			}
+			void
+			interrupt(int sig)
+			{
+				printf("thread %d caught signal %d\n", thr_self(), sig);
+			}
 
 	- child thread is designated to handle SIGINT, no other thread will get SIGINT
+
+###### README
+* I included one more .h file, the warmup2.h to store some variables and structures.
+* But all the compile command is included in the Makefile.
+* Just "make warmup2" or "make" can compile my code.
