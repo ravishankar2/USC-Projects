@@ -11,8 +11,8 @@ http://merlot.usc.edu/cs402-s13/
 	- incomplete
 	- contains code like:
 		* NOT_YET_IMPLEMENTED("PROCS: bootstrap");
-			- assignment name ---|        |
-			- function name --------------|
+			- assignment name ---------------|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+			- function name-------------------------------|
 		* your job is to implement these functions by replacing these lines with your code
 		* please replace them in-place
 	- to look for such code:
