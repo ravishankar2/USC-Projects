@@ -1,0 +1,61 @@
+case1 - Alice can take any valid move 
++B+B+B+B
+B+B+B+B+
++B+B+B+B
+O+O+O+O+
++O+O+O+O
+A+A+A+A+
++A+A+A+A
+A+A+A+A+
+
+
+case2 - Alice should take (5,2)=>(4,1) or (5,2)=>(4,3) or (5,4)=>(4,5)
++B+B+B+B
+O+O+B+B+
++O+O+B+B
+O+B+O+O+
++O+O+O+O
+A+A+A+O+
++O+O+O+O
+O+O+O+O+
+
+case3 - Alice can jump over Bill's piece at (4,1) or (4,3): (5,2)=>(3,0) or (5,2)=>(3,4) or (5,4)=>(3,2)
++O+O+O+O
+O+O+O+O+
++B+O+O+O
+O+O+O+O+
++B+B+O+O
+O+A+A+O+
++O+O+O+O
+O+O+A+A+
+
+
+case4 - Alice should move king (0,1)=>(2,3)
++k+O+O+O
+O+B+O+O+
++O+O+O+B
+O+O+O+B+
++O+O+B+O
+O+O+O+O+
++O+O+O+O
+A+A+A+A+
+
+case5 - Alice should take (5,2)=>(3,0)
++B+B+B+B
+O+O+O+O+
++O+O+O+O
+O+O+O+O+
++B+B+K+O
+O+A+O+O+
++O+O+O+O
+A+A+O+A+
+
+case6 - Alice should move king: (0,1)=>(1,2)
++k+O+O+O
+B+O+O+O+
++O+O+O+O
+O+O+O+O+
++O+O+O+O
+O+O+O+O+
++O+O+O+O
+O+O+O+O+
