@@ -26,12 +26,16 @@ You will need to write a program to implement the following search algorithms, t
 
 #### Input
 1. You are provided with a file social-network-updated.txt (which is an updated version of social network based on that of HW1). Each line describes the reaction time for the recipient to forward the message, and the risk of disclosing the message as well. A sample line would be:
-Lena Claire 17 39.
-This represents that it takes 17 hours for Claire to react and forward the message if Lena send the message to Claire. The risk of disclosing the message is 39 while sending the message between them. Please note that you may assume the friendship is mutual, so it also takes equal amount of time to send the message from Claire to Lena. It also applies to the risk value.
+
+	Lena Claire 17 39.
+
+	This represents that it takes 17 hours for Claire to react and forward the message if Lena send the message to Claire. The risk of disclosing the message is 39 while sending the message between them. Please note that you may assume the friendship is mutual, so it also takes equal amount of time to send the message from Claire to Lena. It also applies to the risk value.
 
 2. You are also provided with direct-time-risk.txt, which describes the time it may cost for each person to reach Noah directly and the accompanying risk of disclosing the message. A sample line would be:
-Kevin 258 52
-This represents that it might take 258 hours for Kevin to reach Noah directly, and the accompany risk of disclosing the message is 52.
+
+	Kevin 258 52
+
+	This represents that it might take 258 hours for Kevin to reach Noah directly, and the accompany risk of disclosing the message is 52.
 
 #### Output
 The program should output the nodes (separated by "-") in the order that show the path of forwarding the message. For example, Alice-Lena-Claire-Noah.
@@ -45,7 +49,3 @@ There should be four .txt output files for all algorithms (one for each algorith
 
 #### Suggestion
 To make sure your program outputs the right results. You may compute each result manually and compare it with that of your program.
-
-#### References
-* [1]. http://en.wikipedia.org/wiki/Small-world_experiment
-* [2]. http://www.cs.cornell.edu/home/kleinber/swn.d/swn.html
