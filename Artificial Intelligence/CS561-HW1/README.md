@@ -45,6 +45,33 @@ To make sure your program outputs the right results. You may compute each result
 * [1]. http://en.wikipedia.org/wiki/Small-world_experiment
 * [2]. http://www.cs.cornell.edu/home/kleinber/swn.d/swn.html
 
+#### Uniform Cost Search Algorithm
+
+	Function UniformCost-Search(problem, Queuing-Fn) returns a solution, or failure
+		open <- make-queue(make-node(initial-state[problem]))
+		closed <- [empty]
+		loop do
+			if open is empty then return failure
+			currnode <- Remove-Front(open)
+			if Goal-Test[problem] applied to State(currnode) then return currnode
+			children<-Expand(currnode, Operators[problem])
+			while children not empty
+				child <- Remove-Front(children)
+				if no node in open or closed has child's state
+					open<-Queuing-Fn(open, child)
+				else if there exists node in open that has child's state
+					if PathCost(child) < PathCost(node)
+						open<-Delete-Node(open, node)
+						open<-Queuing-Fn(open, child)
+				else if there exists node in closed that has child's state
+					if PathCost(child) < PathCost(node)
+						closed<-Delete-Node(closed, node)
+						open<-Queuing-Fn(open, child)
+		end
+		closed<-Insert(closed, currnode)
+		open <- Sort-By-PathCost(open)
+	end
+
 #### Readme
 I implemented this homework by using C++. I write the Makefile and it include all the compile command, you can just type "make" to compile all the code and get the executable file. The executable file should be "csci561_hw1", and type "./csci561_hw1" will execute my program and write the result into txt files.
 
