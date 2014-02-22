@@ -1,0 +1,13 @@
+Kevin 258 52
+Alice 247 49
+Lena 242 52
+Jenny 198 45
+Frank 162 35
+Dan 139 31
+Helen 118 31
+Ian 115 32
+Gill 109 19
+Mark 89 27
+Ben 76 25
+Claire 74 19
+Emma 21 8
