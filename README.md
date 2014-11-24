@@ -1,5 +1,5 @@
-Course-Projects
-===============
+USC-Projects
+============
 
 Course Projects during the study in USC
 
